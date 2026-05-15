@@ -1,0 +1,21 @@
+@use '../../styles/_colors' as *;
+
+.rating{
+    background: $grey900;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover{
+        background: $primary;
+        color: $grey950;
+    }
+
+    &.active{
+        background: $white;
+        color: $grey950;
+    }
+}

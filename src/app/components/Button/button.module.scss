@@ -1,0 +1,26 @@
+@use '../../styles/_colors' as *;
+
+.button{
+    background: $primary;
+    text-transform: uppercase;
+   
+    height: 42px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s linear;
+
+    &.small{
+        width: 30px !important;
+        height: 30px;
+    }
+
+    &:hover{
+        background: $white;
+    }
+
+    &:disabled{
+        opacity: .5;
+        background: $white;
+        cursor: initial;
+    }
+}
